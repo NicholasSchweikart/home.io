@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import {NavLink} from "react-router-dom";
 import IconButton from 'material-ui/IconButton';
-import {Home, Phone, VoiceChat, RecordVoiceOver, MusicNote} from 'material-ui-icons';
+import {AcUnit, Security} from 'material-ui-icons';
 import Tabs, { Tab } from 'material-ui/Tabs';
+
 const style = {
   textAlign:'center',
   fontSize: '1.5vw',
@@ -27,7 +28,7 @@ class BottomDock extends Component {
  handleChange = (event, value) => {
 
    this.setState({ value });
-   const panels = ['temp','intercom','video-chat','music','pa'];
+   const panels = ['temp','security'];
    this.props.changePanel(panels[value]);
  };
 
@@ -42,11 +43,8 @@ class BottomDock extends Component {
           indicatorColor="primary"
           textColor="primary"
         >
-          <Tab icon={<Home />} />
-          <Tab icon={<Phone />} />
-          <Tab icon={<VoiceChat />} />
-          <Tab icon={<MusicNote />} />
-          <Tab icon={<RecordVoiceOver />} />
+          <Tab icon={<AcUnit />} />
+          <Tab icon={<Security />} />
         </Tabs>
       </div>
     );

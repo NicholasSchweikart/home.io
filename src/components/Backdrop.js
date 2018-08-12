@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import rainyBackground from '../pages/images/rainy-background.png';
+import geoBackdrop from '../pages/images/geometric-background.png';
 //import './css/HomeScreen.css';
 const style = {
   position:'absolute',
   zIndex:'-1',
-  backgroundImage: `url(${rainyBackground})`,
+  backgroundImage: `url(${geoBackdrop})`,
   height: '100%',
   width: '100%',
   overflow: 'hidden',
